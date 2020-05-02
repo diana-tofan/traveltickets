@@ -21,4 +21,4 @@ circle.drawCircle(radius, radius, radius);
 circle.endFill();
 app.stage.addChild(circle);
 
-renderer.render(app.stage);
+renderer.render(app.stage); //

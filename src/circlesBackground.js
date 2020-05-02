@@ -15,10 +15,10 @@ doc.appendChild(view);
 const radius = 60;
 
 circle = new PIXI.Graphics();
-circle.filters = [new PIXI.filters.BlurFilter(radius / 1.5, radius / 6, 1)];
+circle.filters = [new PIXI.filters.BlurFilter(radius, radius / 6, 1)];
 circle.beginFill(0xff7f50);
-circle.drawCircle(radius, radius, radius);
+circle.drawCircle(radius, radius, radius - 10);
 circle.endFill();
 app.stage.addChild(circle);
 
-renderer.render(app.stage); //
+renderer.render(app.stage);
